@@ -10,6 +10,6 @@ runs:
   using: "composite"
   steps:
     - name: Steps 
-       shell: bash
+      shell: bash
       run: |
         echo "Passed argument: ${{ inputs.some_var }}"
