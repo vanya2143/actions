@@ -1,0 +1,15 @@
+name: mine-action
+description: some sample action
+
+inputs:
+  some_var:
+    description: some echo var
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Steps 
+       shell: bash
+      run: |
+        echo "Passed argument: ${{ inputs.some_var }}"
